@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Travellin</string>
+    <string name="greet">Wellcome back</string>
+    <string name="name">Mohamad Rizal</string>
+    <string name="explorethebeauty">Explore The Beauty</string>
+    <string name="offer">Get special offers</string>
+    <string name="category">Category</string>
+    <string name="nearest">Nearest</string>
+    <string name="Placeholder">Placeholder</string>
+</resources>
