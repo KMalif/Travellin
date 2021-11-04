@@ -7,7 +7,7 @@ import com.bumptech.glide.Glide
 import com.mohamad_rizal.travellin.databinding.ListTourBinding
 import com.mohamad_rizal.travellin.models.Nearest
 
-class NearestAdapter(private val listTour : ArrayList<Nearest>) : RecyclerView.Adapter<NearestAdapter.TourViewholder>() {
+class NearestAdapter(private val listTour : ArrayList<Nearest>, private val listener : NearestAdapter.OnTourClick) : RecyclerView.Adapter<NearestAdapter.TourViewholder>() {
 
     inner class TourViewholder(val binding: ListTourBinding):RecyclerView.ViewHolder(binding.root)
 
@@ -23,9 +23,16 @@ class NearestAdapter(private val listTour : ArrayList<Nearest>) : RecyclerView.A
 
             Title.text = listTour[position].tourName
         }
+        holder.itemView.setOnClickListener {
+            listener.onItemTourClick(listTour[position])
+        }
     }
 
     override fun getItemCount(): Int {
         return listTour.size
+    }
+
+    interface OnTourClick{
+        fun onItemTourClick(nearestTour: Nearest)
     }
 }
