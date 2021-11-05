@@ -4,8 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.mohamad_rizal.travellin.databinding.ListTourBinding
 import com.mohamad_rizal.travellin.models.Nearest
+import com.mohamad_rizal.travellin.databinding.ListTourBinding
 
 class NearestAdapter(private val listTour : ArrayList<Nearest>, private val listener : NearestAdapter.OnTourClick) : RecyclerView.Adapter<NearestAdapter.TourViewholder>() {
 

@@ -1,9 +1,9 @@
 package com.mohamad_rizal.travellin
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
 import com.mohamad_rizal.travellin.databinding.ActivityDetailBinding
+
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding : ActivityDetailBinding
